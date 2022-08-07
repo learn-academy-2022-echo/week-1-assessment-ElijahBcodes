@@ -73,20 +73,16 @@ console.log (lengthOf.length); //return the new joined array's length expected o
 
 // --------------------3) Create the code that will reverse the letters of a string using the test variable provided below. Expected output: "2202 ohcE"
 
-
-
-
-
-
 // Pseudo code:
-//in a console log us .split turn string into array then .join takes an array and returns a string then revese it  /withand .reverse //
+//in a console log us .split turn string into array then .join takes an array and returns a string then reverse it  /with .reverse //
 const currentCohort = "Echo 2022"  
 console.log(currentCohort.split(" ").join().reverse(" "));
 
-//another way to solve this problem with a decrimenting loop in a function so that the code can be re used making it cool
+//Psuedo code:
+//another way to solve: with a decrimenting loop in a function so code can be resuable
  //declare a function backwards that can accept an argument of a string
 //make a variable to hold the new string//
-//for loop to iterate thru the string and starting at index -1 the last letter of the string,while i is >= o the loop will iterate
+//for loop to iterate thru the string and starting at index -1 the last letter of the string,while i is >= o the loop //will iterate
 //adding the data at each index into a new string
 // return the string reversed
 //here we use the function created above to reverse the currentCohort//
@@ -104,10 +100,10 @@ console.log(reverseLean);
 // --------------------4) Create a statement that will evaluate whether each number in an array is even or odd. Use the test variable provided below. Expected output: "odd" "even" "odd" "even" "odd" "even"
 
 // Pseudo code:
-//create a statement or conditional starting at index 0, ending when i 
+//create a statement for or conditional starting at index 0, iterate thru array
 //this is the condition: for every index in array if the modulo or remainder of that index /2 =1
-//the number is odd
-//it is divided by 2 and the ///////
+//the number is odd return odd 
+//else if to check if it is even. If there is no remainder from the modulo
 //
 //
 //
@@ -123,6 +119,7 @@ const myArray = [13, 34, 5, 10, 27, 42]
  }
 
 //another way to solve shortened because we know if its not odd then it must be even 
+//use an else statement instead and we don't need a conditional
 
 const myArray = [13, 34, 5, 10, 27, 42]
 
@@ -137,10 +134,9 @@ const myArray = [13, 34, 5, 10, 27, 42]
 //
 
 myArray[i] %2 console.log(my?  //can't use a ternary not sure how to set that up....abort idea
-
 //turn array into string ..
 //below was one of my first failed attempts..
-// const oddOrEven = (myArray) >= {   tried to make a function but I realize thats wrong, needed to declare the starting and stopping point.
+// const oddOrEven = (myArray) >= {   
 //     if (myArray[i]%2 == 0);{
 //         return "odd"
 //     } else {                                 
@@ -179,4 +175,4 @@ const numChecker = (num1,num2) => {         //create function takes in two nums1
 }
 }
 console.log(numChecker(number1,number2),numChecker(number3,number4));
-       //run the functionnum
+       //run the numChecker
